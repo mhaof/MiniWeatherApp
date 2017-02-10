@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MiniWeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Au0-VJ-5YV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How's the weather?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yym-nh-BuD">
+                                <rect key="frame" x="25" y="40" width="270" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="033-9y-OQb"/>
+                                    <constraint firstAttribute="height" constant="21" id="Y6F-LS-wJt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your city:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kY5-h5-bMK">
+                                <rect key="frame" x="102" y="93" width="116" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90g-kW-2e2">
+                                <rect key="frame" x="135.5" y="191" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="getWeather:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Wd-pt-uTG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zu6-hw-DYu">
+                                <rect key="frame" x="25" y="238" width="270" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="eqV-Lu-7Zj"/>
+                                    <constraint firstAttribute="height" constant="106" id="gZw-0T-qpt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eg. Helsinki, New York" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6FP-az-Gge">
+                                <rect key="frame" x="16" y="122" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kY5-h5-bMK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1FD-K4-UIL"/>
+                            <constraint firstAttribute="trailing" secondItem="Au0-VJ-5YV" secondAttribute="trailing" id="643-Ev-kqG"/>
+                            <constraint firstItem="Yym-nh-BuD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="BUe-e0-5zJ"/>
+                            <constraint firstItem="6FP-az-Gge" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BWY-0O-U4G"/>
+                            <constraint firstItem="90g-kW-2e2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="115.5" id="DXm-ff-Wcq"/>
+                            <constraint firstItem="6FP-az-Gge" firstAttribute="top" secondItem="kY5-h5-bMK" secondAttribute="bottom" constant="8" id="NNa-04-jyd"/>
+                            <constraint firstItem="90g-kW-2e2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PV1-RW-WbR"/>
+                            <constraint firstItem="90g-kW-2e2" firstAttribute="top" secondItem="6FP-az-Gge" secondAttribute="bottom" constant="39" id="TWs-1g-3FS"/>
+                            <constraint firstItem="6FP-az-Gge" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Xd4-QL-mm1"/>
+                            <constraint firstItem="Zu6-hw-DYu" firstAttribute="top" secondItem="90g-kW-2e2" secondAttribute="bottom" constant="17" id="hgd-0j-LZo"/>
+                            <constraint firstItem="6FP-az-Gge" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="mhf-jN-Rnt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="90g-kW-2e2" secondAttribute="trailing" constant="115.5" id="mnr-9j-s7v"/>
+                            <constraint firstItem="Yym-nh-BuD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="od4-Fr-qth"/>
+                            <constraint firstItem="Zu6-hw-DYu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="puy-ve-uPm"/>
+                            <constraint firstItem="Au0-VJ-5YV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="r27-MB-dUm"/>
+                            <constraint firstItem="Yym-nh-BuD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="s5V-fE-nRL"/>
+                            <constraint firstItem="kY5-h5-bMK" firstAttribute="top" secondItem="Yym-nh-BuD" secondAttribute="bottom" constant="32" id="sHC-rs-LIy"/>
+                            <constraint firstItem="90g-kW-2e2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vrv-1w-rR1"/>
+                            <constraint firstItem="Au0-VJ-5YV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xiQ-Qh-Zy8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Au0-VJ-5YV" secondAttribute="bottom" id="xkh-QB-e5o"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityTextField" destination="6FP-az-Gge" id="i0J-Oo-QMw"/>
+                        <outlet property="resultLabel" destination="Zu6-hw-DYu" id="FcA-1I-d0K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="137.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background.jpg" width="2000" height="1334"/>
+    </resources>
+</document>
