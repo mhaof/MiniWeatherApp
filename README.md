@@ -1,7 +1,11 @@
 
 # About
 
-# Demo
+# Demo Walkthrough
+![alt tag] 
+
+
+GIF created with Licecap
 
 # Note
 
