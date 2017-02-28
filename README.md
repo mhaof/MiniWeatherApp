@@ -1,28 +1,30 @@
 
-# Self Project - *Music App*
+# Self Project - *Weather App*
 
 ## About
 
-A simple music web app created with Reactjs using [Spotify API](https://developer.spotify.com/web-api/)
-node -v : v7.6.0
-npm -v : v4.1.2
+A simple weather app created with Swift using weather information from [weather-forecase](http://www.weather-forecast.com/locations/)
+
 
 ## Detail
 
-- [X] User can search for favorite artists
-- [X] App displays genre, number of followers, top tracks with album cover from searched artist 
-- [X] Audio play/pause function
+- [X] User can input location for weather info
+- [X] App displays weather info of the city.
 
 ## Quick Look
-Note: There’s also audio playing in background when you click Play button
 
-<img src='http://i.imgur.com/fRtvIE2.gif' title='Demo' width='' alt='Demo' />
+<img src='http://i.imgur.com/5RKTB5N.gif' title='Demo' width='' alt='Demo' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
+## Room for Improvement
+
+- [ ] Better UI, more effects based on weather condition.
+- [ ] Weather info for the next few days at once.
+- [ ] Background changing.
 ## Study Note
-- [X] react-bootstrap
-- [X] React libraries and ES6 syntax
-- [X] Web requests and APIs in React
-- [X] Flexbox - a form of styling often used in React applications that allows components and elements to expand based on portions of the screen. 
-- [X] Audio - native Javascript object
+- [X] Basic ViewController
+- [X] Set up UI on Xcode
+- [X] Modify Info.plist, add exception for app to work with http:// url
+- [X] Handle raw info(text) from live info to app
+
